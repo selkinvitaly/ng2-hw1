@@ -1,0 +1,21 @@
+<h1>Hot Weather Widget</h1>
+
+<div class="element">
+  <div class="element-left">
+    <place-component
+      [changeArticle]="changeArticle"
+      [places]="places"
+      [selected]="selected"
+    ></place-component>
+  </div>
+  <div class="element-right">
+    <weather-component [currentPlace]="places[selected]"></weather-component>
+    <stats-component [currentPlace]="places[selected]"></stats-component>
+  </div>
+</div>
+
+<p class="clear"></p>
+
+<div class="copy-right">
+  <p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts </a></p>
+</div>
